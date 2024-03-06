@@ -25,19 +25,4 @@ for tag in anchor_tags:
     print(title)
     
 
-# %%
-with open('/Users/sadiqkhawaja/Desktop/Brackets/RedLikeOhio/Course Modules_ Genes and Gene Expression in Eukaryotic Cells 2023 A.html', 'r') as file:
-    html = file.read()
-soup = BeautifulSoup(html, 'html.parser')
-links = soup.find_all('a', class_='ig-title title item_link')
-# Find the <a> tag and extract the title attribute
-# Find all <a> tags with class 'ig-title'
-anchor_tags = soup.find_all('a', class_='ig-title')
-
-# Loop through each tag and extract the title
-for tag in anchor_tags:
-    title = tag.get('title', 'Title not found')
-    print(title)
-    
-
 
