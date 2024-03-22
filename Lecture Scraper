@@ -13,9 +13,6 @@ with open('/Users/sadiqkhawaja/Desktop/Brackets/RedLikeOhio/Course Modules_ Cell
 # %%
 soup = BeautifulSoup(html, 'html.parser')
 
-# %%
-links = soup.find_all('a', class_='ig-title title item_link')
-# Find the <a> tag and extract the title attribute
 # Find all <a> tags with class 'ig-title'
 anchor_tags = soup.find_all('a', class_='ig-title')
 
